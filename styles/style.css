@@ -181,4 +181,16 @@ body {
             transform: rotate(90deg) translate(-215px, -70px);
   }
 }
+
+.footer {
+  text-align: center;
+  color: #b9bdcf;
+  font-size: 0.8rem;
+  margin-bottom: 30px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #a9a9a9;
+}
 /*# sourceMappingURL=style.css.map */
