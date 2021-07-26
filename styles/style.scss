@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  //   overflow-x: hidden;
+  //   overflow-y: hidden;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+
+  h1 {
+    font-family: "PT Serif", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    margin-left: 45px;
+  }
+
+  .header-text {
+    margin-left: clamp(100px, 14vw, 215px);
+    width: 400px;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+  }
+
+  .header-text-top {
+    font-weight: 600;
+    margin-top: 5px;
+  }
+
+  .header-text-bottom {
+    font-weight: 400;
+    margin-top: 10px;
+  }
+}
+
+.crew-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 1000px;
+  margin-top: 96px;
+
+  img {
+    width: 238px;
+    height: 341px;
+    margin-left: 47px;
+    margin-right: 47px;
+  }
+
+  .name {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: 47px;
+    margin-right: 47px;
+    margin-bottom: 132px;
+  }
+
+  .title {
+    font-family: "PT Serif", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    transform: rotate(90deg) translate(-345px, -135px);
+  }
+
+  .saba {
+    transform: translateY(110px);
+  }
+  .griff {
+    transform: translateY(110px);
+  }
+}
+
+@media (max-width: 1000px) {
+  .crew-container {
+    width: auto;
+
+    .griff {
+      transform: translateY(0px);
+    }
+    .saba {
+      transform: translateY(55px);
+    }
+    .skylah {
+      transform: translateY(55px);
+    }
+    .stan {
+      transform: translateY(55px);
+    }
+  }
+}
+
+@media (max-width: 872px) {
+  .header {
+    flex-direction: column;
+
+    h1 {
+      margin-left: 0;
+    }
+    .header-text {
+      margin-left: 0;
+      margin-top: 38px;
+    }
+  }
+}
+
+@media (max-width: 664px) {
+  //   html,
+  //   body {
+  //     width: auto;
+  //     overflow-x: initial;
+  //   }
+  .header {
+    margin: auto;
+    transform: translateX(10px);
+
+    .header-text-bottom {
+      font-size: 14px;
+      width: 300px;
+    }
+  }
+  .crew-container {
+    width: 435px;
+    margin: auto;
+    margin-top: 30px;
+    transform: translateX(-35px);
+    img {
+      width: 138px;
+      height: 209px;
+      margin-left: 12px;
+      margin-right: 30px;
+    }
+    .name {
+      font-size: 14px;
+      margin: 0;
+      margin-left: 12px;
+      margin-bottom: 64px;
+    }
+    .title {
+      font-size: 10px;
+      transform: rotate(90deg) translate(-215px, -70px);
+    }
+  }
+}
