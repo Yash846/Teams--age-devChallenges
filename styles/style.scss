@@ -82,6 +82,7 @@ body {
   }
   .griff {
     transform: translateY(110px);
+    max-height: 400px;
   }
 }
 
@@ -100,6 +101,7 @@ body {
     }
     .stan {
       transform: translateY(55px);
+      max-height: 250px;
     }
   }
 }
@@ -119,11 +121,11 @@ body {
 }
 
 @media (max-width: 664px) {
-  //   html,
-  //   body {
-  //     width: auto;
-  //     overflow-x: initial;
-  //   }
+  // html,
+  // body {
+  //   width: auto;
+  //   overflow-x: initial;
+  // }
   .header {
     margin: auto;
     transform: translateX(10px);
@@ -161,6 +163,7 @@ body {
   text-align: center;
   color: #b9bdcf;
   font-size: 0.8rem;
+  margin-top: 40px;
   margin-bottom: 30px;
 
   a {
